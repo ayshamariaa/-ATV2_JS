@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>População</title> 
+  <link rel="stylesheet" type="text/css" href="Q4.css">
+  <script src="Q4.js"></script>
+</head>
+<body>
+  <h1>crescimento de população</h1>
+  <form>
+    <label for="populacao-a">População do país A:</label>
+    <input type="number" id="populacao-a" name="populacao-a" min="1" required>
+
+    <label for="taxa-a">Taxa de crescimento do país A:</label>
+    <input type="number" id="taxa-a" name="taxa-a" min="0" step="0.01" required>
+
+    <label for="populacao-b">População do país B:</label>
+    <input type="number" id="populacao-b" name="populacao-b" min="1" required>
+
+    <label for="taxa-b">Taxa de crescimento do país B:</label>
+    <input type="number" id="taxa-b" name="taxa-b" min="0" step="0.01" required>
+
+    <button type="button" onclick="calcular()">Calcular</button>
+  </form>
+
+  <div id="resultado"></div>
+</body>
+</html>
